@@ -7,3 +7,5 @@ matplotlib
 seaborn
 scikit-learn
 torchcodec
+huggingface_hub
+dotenv
