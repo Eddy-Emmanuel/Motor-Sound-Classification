@@ -12,7 +12,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from app.models.load_model import local_dir
+from models.load_model import local_dir
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Page config
