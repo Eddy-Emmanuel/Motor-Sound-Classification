@@ -3,6 +3,7 @@ import numpy as np
 import math
 import os
 import io
+import soundfile as sf
 from pathlib import Path
 
 import torch
@@ -274,7 +275,10 @@ def get_mel_transform():
     )
 
 def load_audio_bytes(audio_bytes: bytes):
-    wave, sr = torchaudio.load(io.BytesIO(audio_bytes))
+    wave, sr = sf.read(io.BytesIO(audio_bytes), dtype="float32")
+    wave = torch.from_numpy(wave).T  # shape: (channels, samples)
+    if wave.ndim == 1:
+        wave = wave.unsqueeze(0)
     if sr != cfg.sampling_rate:
         wave = torchaudio.transforms.Resample(sr, cfg.sampling_rate)(wave)
     if wave.shape[0] > 1:
