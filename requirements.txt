@@ -9,3 +9,4 @@ scikit-learn
 torchcodec
 huggingface_hub
 dotenv
+soundfile
