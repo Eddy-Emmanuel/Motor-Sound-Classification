@@ -2,11 +2,10 @@
 
 > **Six deep learning architectures — GRU, LSTM, LSTM-GRU, and three custom Transformer variants — trained from scratch to classify industrial motor audio into three operational states.**
 
-[![HuggingFace Space](https://img.shields.io/badge/🤗%20Space-Live%20Demo-yellow)](https://huggingface.co/spaces/Eddy-Emmanuel/Motor-Sound-Classification)
+[![Streamlit App](https://img.shields.io/badge/Streamlit-Live%20Demo-FF4B4B?logo=streamlit)](https://motor-sound-classification-syoldbw2wrk6rmcb2ckeei.streamlit.app/)
 [![HuggingFace Weights](https://img.shields.io/badge/🤗%20Weights-Motor__Sound__Classifier-orange)](https://huggingface.co/Eddy-Emmanuel/Motor_Sound_Classifier)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C?logo=pytorch)](https://pytorch.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit)](https://streamlit.io/)
 
 ---
 
@@ -26,7 +25,7 @@ This project classifies the operational state of an industrial motor from raw `.
 
 The app is deployed on HuggingFace Spaces:
 
-**👉 [huggingface.co/spaces/Eddy-Emmanuel/Motor-Sound-Classification](https://huggingface.co/spaces/Eddy-Emmanuel/Motor-Sound-Classification)**
+**👉 [motor-sound-classification-syoldbw2wrk6rmcb2ckeei.streamlit.app](https://motor-sound-classification-syoldbw2wrk6rmcb2ckeei.streamlit.app/)**
 
 Upload any `.wav` file and get instant predictions from all six models plus an ensemble view.
 
